@@ -1,0 +1,228 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Concert+One&display=swap');
+
+body {
+    background-image: linear-gradient(to right, black, rgba(53,51,205,1));
+    background-color: black;
+}
+
+header{
+    margin: 0px 30px;
+    height: 800px;
+}
+
+.logo{
+    padding-top: 25px;
+    margin-left: 100px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.menu{
+    margin-left: 15px;
+}
+
+.logo, .menu{
+    display: inline-block;
+}
+
+.bemvindos{
+    position: relative;
+    top: 150px;
+    right: 180px;
+}
+
+.bemvindos h1{
+    font-family: 'Concert One', cursive;
+    text-align:center;
+    color:#6A4CF8;
+    font-size: 400%;
+    text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
+    margin-bottom: 0;
+}
+
+#tit2{
+    margin-left: 280px;
+    color:#F6B737;
+    text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
+}
+
+#img1{
+    position: relative;
+    bottom: 490px;
+    left: 180px;
+}
+
+#perfil{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1000px;
+    bottom: 530px;
+}
+
+#foto-perfil{
+    border-radius: 50%;
+    border: 7px solid #9C9DFF;
+}
+
+.cubo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+}
+
+.cubo-pequeno {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+}
+
+.cubo-grande {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.front {
+    transform: translateZ(50px);
+    background-color: #3965AF;
+}
+
+.left {
+    transform: translateX(-50px) rotateY(-90deg);
+    background-color: #7185DD;
+}
+
+.bottom {
+    transform: translateY(50px) rotateX(-90deg);
+    background-color: #2A5DA4;
+}
+
+.front-pequeno {
+    transform: translateZ(25px);
+    background-color: #3965AF;
+}
+
+.left-pequeno {
+    transform: translateX(-25px) rotateY(-90deg);
+    background-color: #7185DD;
+}
+
+.bottom-pequeno {
+    transform: translateY(25px) rotateX(-90deg);
+    background-color: #2A5DA4;
+}
+
+.front-grande {
+    transform: translateZ(100px);
+    background-color: #3965AF;
+}
+
+.left-grande {
+    transform: translateX(-100px) rotateY(-90deg);
+    background-color: #7185DD;
+}
+
+.bottom-grande {
+    transform: translateY(100px) rotateX(-90deg);
+    background-color: #2A5DA4;
+}
+
+#cubo1{
+    position: relative;
+    left: 1050px;
+    bottom: 250px;
+}
+
+#cubo2{
+    position: relative;
+    left: 1310px;
+    bottom: 120px;
+}
+
+#cubo3{
+    position: relative;
+    left: 1230px;
+    bottom: 330px;
+}
+
+#cubo4{
+    position: relative;
+    left: 1330px;
+    bottom: 620px;
+}
+
+#icones-contato{
+    position: relative;
+    left: 52px;
+    margin-top: 10px;
+}
+
+.icones{
+    color: #7185DD;
+    margin: 5px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    background-image: url("img/fundo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    height: auto;
+    margin: 50px;
+    padding: 100px;
+    text-align: center;
+}
+
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulos{
+    font-size: 50px;
+    position: relative;
+    bottom: 60px;
+    font-family: 'Bungee', cursive;
+    color: aliceblue;
+    text-shadow: 3px -5px 3px #F6B737;
+}
+
+#img2{
+    position: rela;
+    left: 400px;
+    opacity: 10%;
+}
+
+.texto-descricao{
+    text-align: justify;
+    font-size: larger;
+    width: 70%;
+    color:white;
+    margin-left: 100px;
+}
