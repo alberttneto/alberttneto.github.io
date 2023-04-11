@@ -8,8 +8,10 @@ body {
 }
 
 header{
-    margin: 0px 30px;
+    margin: 0 auto;
+    width: 100%;
     height: 800px;
+
 }
 
 .logo{
@@ -64,6 +66,7 @@ a:link, a:visited{
     position: relative;
     left: 1000px;
     bottom: 530px;
+    width: 300px;
 }
 
 #foto-perfil{
@@ -171,6 +174,7 @@ a:link, a:visited{
 }
 
 #icones-contato{
+    width: 200px;
     position: relative;
     left: 52px;
     margin-top: 10px;
@@ -198,7 +202,7 @@ section{
     text-align: center;
 }
 
-section div{
+#sobremim div{
     display: flex;
     align-items: center;
     justify-content: center;
