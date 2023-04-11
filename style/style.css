@@ -202,7 +202,7 @@ section{
     text-align: center;
 }
 
-#sobremim div{
+#sobremim div, #hardskills, #softskills{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,6 +215,26 @@ section{
     font-family: 'Bungee', cursive;
     color: aliceblue;
     text-shadow: 3px -5px 3px #F6B737;
+}
+
+
+.listasecao li{
+    text-align: justify;
+    color: aliceblue;
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#listahardskill li {
+    fill: #f3e51e;
+    margin: 0px 10px 5px 0px;
+  }
+
+#listasoftskill li{
+    fill: #F985E4;
+    margin: 0px 10px 5px 0px; 
 }
 
 #img2{
