@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-:root{
-
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Concert+One&display=swap');
 
@@ -19,7 +16,6 @@ a:link, a:visited{
     color:aliceblue;
 }
 
-
 .menu{
     display: flex;
     flex-flow: row wrap;
@@ -27,15 +23,19 @@ a:link, a:visited{
     align-items: center;
 }
 
- #titulos-apresentacao{
+header main img{
+    margin-top: 60px;
+    
+}
 
+ #titulos-apresentacao{
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
 #titulos-apresentacao h1{
     font-family: 'Concert One', cursive;
-    /* text-align: center; */
     color:#6A4CF8;
     font-size: 400%;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
@@ -43,16 +43,17 @@ a:link, a:visited{
 
 
 #titulos-apresentacao h1 + h1{
-    /* margin-left: 280px; */
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
 }
 
 
 #perfil{
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    width: 300px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #perfil img{
@@ -62,8 +63,9 @@ a:link, a:visited{
 }
 
 #icones-contato{
-    width: 200px;
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .icones{
@@ -71,28 +73,49 @@ a:link, a:visited{
     margin: 5px;
 }
 
-.cubo {
+#cubos{
     position: relative;
+}
+
+#cubos div{
+    position: absolute;
+}
+
+.cubo {
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
     transform: perspective(500px) rotateX(30deg) rotateY(45deg);
 }
 
+#cubos > div:first-of-type{
+
+    left: 350px;
+}
+#cubos > div:first-of-type + div{ 
+    top: 20px;
+    left: 35px;
+}  
+
 .cubo-pequeno {
-    position: relative;
     width: 50px;
     height: 50px;
     transform-style: preserve-3d;
     transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+
+    top: 35px;
+    left: 220px;
 }
 
 .cubo-grande {
-    position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     transform-style: preserve-3d;
     transform: perspective(500px) rotateX(30deg) rotateY(45deg);
+    
+    left: 220px;
+    top: 170px;
+
 }
 
 .face {
@@ -131,55 +154,16 @@ a:link, a:visited{
     background-color: #2A5DA4;
 }
 
-.front-grande {
-    transform: translateZ(100px);
-    background-color: #3965AF;
-}
-
-.left-grande {
-    transform: translateX(-100px) rotateY(-90deg);
-    background-color: #7185DD;
-}
-
-.bottom-grande {
-    transform: translateY(100px) rotateX(-90deg);
-    background-color: #2A5DA4;
-}
-
-/* 
-#cubo1{
-    position: relative;
-    left: 1050px;
-    bottom: 250px;
-}
-
-#cubo2{
-    position: relative;
-    left: 1310px;
-    bottom: 120px;
-}
-
-#cubo3{
-    position: relative;
-    left: 1230px;
-    bottom: 330px;
-}
-
-#cubo4{
-    position: relative;
-    left: 1330px;
-    bottom: 620px;
-}
-} 
-*/
-
 header{
     display: grid;
     grid-template-areas: 
     ". . . . ."
     ". nav nav aside ."
     ". header-main header-main aside ."
-    ". header-main header-main aside .";
+    ". header-main header-main aside ."
+    ". . . . .";
+    grid-template-columns: 5% 35% 30% 20% 10%;
+    grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
 header > .menu{
@@ -193,12 +177,6 @@ header > main{
 header > aside{
     grid-area: aside;
 }
-
-
-/* main{
-    width: 100%;
-    height: 100%;
-} */
 
 section{
     background-image: url("../img/fundo1.png");
