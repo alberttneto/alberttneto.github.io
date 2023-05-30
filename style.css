@@ -9,8 +9,10 @@
 body {
 
     background-image: linear-gradient(to right, black, rgba(53,51,205,1));
+    background-repeat: no-repeat;
     background-color: black;
 }
+
 a:link, a:visited{
     text-decoration: none;
     color:aliceblue;
@@ -25,7 +27,6 @@ a:link, a:visited{
 
 header main img{
     margin-top: 60px;
-    
 }
 
  #titulos-apresentacao{
@@ -41,13 +42,11 @@ header main img{
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
 }
 
-
 #titulos-apresentacao h1 + h1{
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
     padding-left: 334px;
 }
-
 
 #perfil{
     height: 100%;
@@ -157,12 +156,12 @@ header main img{
 header{
     display: grid;
     grid-template-areas: 
-    ". . . . ."
-    ". nav nav aside ."
-    ". header-main header-main aside ."
-    ". header-main header-main aside ."
-    ". . . . .";
-    grid-template-columns: 5% 35% 30% 20% 10%;
+    ". . . . . ."
+    ". nav nav . aside ."
+    ". header-main header-main . aside ."
+    ". header-main header-main . aside ."
+    ". . . . . .";
+    grid-template-columns: 10% 20% 30% 3% 22% 5%;
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
@@ -178,6 +177,12 @@ header > aside{
     grid-area: aside;
 }
 
+body > main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
 section{
     background-image: url("../img/fundo1.png");
     background-repeat: no-repeat;
@@ -185,6 +190,7 @@ section{
     background-size: cover;
     border-radius: 30px;
     height: auto;
+    width: 80%;
     margin: 50px;
     padding: 100px;
     text-align: center;
@@ -250,4 +256,49 @@ section{
     width: 70%;
     color:white;
     margin-left: 100px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1200px) {
+    #cubos{
+        display: none;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+    
+    #titulos-apresentacao h1 + h1{
+        padding: 0;
+    }
+    
+
+    header{
+        grid-template-areas: 
+        ". . ."
+        ". nav . "
+        ". aside ."
+        ". header-main ."
+        ". . .";
+
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 30px 200px 450px 700px 60px;
+    }
+
+    section > div{
+        flex-flow: column wrap;
+    }
+
+    section{
+        flex-flow: column wrap;
+    }
+
+    .texto-descricao{
+        margin: 0;
+    }
+
+    #hardskillS{
+        
+    }
 }
