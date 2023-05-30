@@ -45,6 +45,7 @@ header main img{
 #titulos-apresentacao h1 + h1{
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
+    padding-left: 334px;
 }
 
 
@@ -115,7 +116,6 @@ header main img{
     
     left: 220px;
     top: 170px;
-
 }
 
 .face {
@@ -180,8 +180,8 @@ header > aside{
 
 section{
     background-image: url("../img/fundo1.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     border-radius: 30px;
     height: auto;
@@ -195,6 +195,19 @@ section{
     align-items: center;
     justify-content: center;
 }
+
+#hardskills, #softskills{
+    gap: 200px;
+    background-position: -1;
+}
+
+#hardskills, #projetos{
+    background-image: url("../img/fundo2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 .titulos{
     font-size: 50px;
