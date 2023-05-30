@@ -11,12 +11,16 @@ header{
     margin: 0 auto;
     width: 100%;
     height: 800px;
-
 }
 
-.logo{
-    padding-top: 25px;
-    margin-left: 100px;
+header{
+    display: inline-block
+    
+    ;
+}
+
+#logo-menu{
+    margin-right: 10px;
 }
 
 a:link, a:visited{
@@ -24,54 +28,31 @@ a:link, a:visited{
     color:aliceblue;
 }
 
-.menu{
-    margin-left: 15px;
+#menu{
+    margin: 30px 0px 0px 50px;
 }
 
-.logo, .menu{
+#menu *{
     display: inline-block;
 }
 
-.bemvindos{
-    position: relative;
-    top: 150px;
-    right: 180px;
-}
 
-.bemvindos h1{
+#bemvindos h1{
     font-family: 'Concert One', cursive;
-    text-align:center;
-    color:#6A4CF8;
+    text-align: center;   
     font-size: 400%;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
     margin-bottom: 0;
+}
+
+#tit1{
+    color:#6A4CF8;
 }
 
 #tit2{
     margin-left: 280px;
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
-}
-
-#img1{
-    position: relative;
-    bottom: 490px;
-    left: 180px;
-}
-
-#perfil{
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 1000px;
-    bottom: 530px;
-    width: 300px;
-}
-
-#foto-perfil{
-    border-radius: 50%;
-    border: 7px solid #9C9DFF;
 }
 
 .cubo {
@@ -149,30 +130,6 @@ a:link, a:visited{
     background-color: #2A5DA4;
 }
 
-#cubo1{
-    position: relative;
-    left: 1050px;
-    bottom: 250px;
-}
-
-#cubo2{
-    position: relative;
-    left: 1310px;
-    bottom: 120px;
-}
-
-#cubo3{
-    position: relative;
-    left: 1230px;
-    bottom: 330px;
-}
-
-#cubo4{
-    position: relative;
-    left: 1330px;
-    bottom: 620px;
-}
-
 #icones-contato{
     width: 200px;
     position: relative;
@@ -184,6 +141,8 @@ a:link, a:visited{
     color: #7185DD;
     margin: 5px;
 }
+
+
 
 main{
     width: 100%;
