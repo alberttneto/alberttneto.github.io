@@ -205,7 +205,7 @@ section{
 }
 
 section:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 #sobremim div, #hardskills, #softskills{
@@ -273,6 +273,26 @@ section:hover{
     filter: brightness(0.3);
 }
 
+#voltar-inicio{
+    display: flex;
+    background-color: #282d70;
+    width: 50px;
+    height: 50px;
+    fill: white;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 15px;
+    border: 2px solid rgb(240, 240, 237);
+    margin: 12px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;    
+}
+
+#voltar-inicio > svg{
+    color: antiquewhite;
+}
 
 /* Responsividade */
 
