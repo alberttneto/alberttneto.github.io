@@ -16,6 +16,13 @@ body {
 a:link, a:visited{
     text-decoration: none;
     color:aliceblue;
+    transition: 0.3s ease-in-out;
+}
+
+.nav a:hover, #perfil a:hover{
+    position: relative;
+    top: 5px;
+    text-decoration: underline;
 }
 
 .menu{
@@ -161,7 +168,7 @@ header{
     ". header-main header-main . aside ."
     ". header-main header-main . aside ."
     ". . . . . .";
-    grid-template-columns: 10% 20% 30% 3% 22% 5%;
+    grid-template-columns: 5% 32% 32% 1% 21% 9%;
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
@@ -190,10 +197,15 @@ section{
     background-size: cover;
     border-radius: 30px;
     height: auto;
-    width: 80%;
+    width: 88%;
     margin: 50px;
     padding: 100px;
     text-align: center;
+    transition: 1s ease-in-out;
+}
+
+section:hover{
+    transform: scale(1.03);
 }
 
 #sobremim div, #hardskills, #softskills{
@@ -244,18 +256,42 @@ section{
     margin: 0px 10px 5px 0px; 
 }
 
-#img2{
-    position: rela;
-    left: 400px;
-    opacity: 10%;
-}
-
 .texto-descricao{
     text-align: justify;
     font-size: larger;
     width: 70%;
     color:white;
     margin-left: 100px;
+}
+
+#projetos img{
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#projetos img:hover{
+    filter: brightness(0.3);
+}
+
+#voltar-inicio{
+    display: flex;
+    background-color: #282d70;
+    width: 50px;
+    height: 50px;
+    fill: white;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 15px;
+    border: 2px solid rgb(240, 240, 237);
+    margin: 12px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;    
+}
+
+#voltar-inicio > svg{
+    color: antiquewhite;
 }
 
 /* Responsividade */
@@ -298,7 +334,4 @@ section{
         margin: 0;
     }
 
-    #hardskillS{
-        
-    }
 }
