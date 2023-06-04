@@ -269,8 +269,16 @@ section:hover{
     transition: 0.5s ease-in-out;
 }
 
-#projetos img:hover{
-    filter: brightness(0.3);
+/* #projetos img:hover{
+    filter: brightness(0.1);
+} */
+
+.info-projeto{
+    visibility: hidden;
+    color: white;
+    position: absolute;
+    padding: 100px 200px 0px 200px;
+    z-index: 1;
 }
 
 #voltar-inicio{
