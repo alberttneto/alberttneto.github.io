@@ -22,7 +22,6 @@ a:link, a:visited{
 .nav a:hover, #perfil a:hover{
     position: relative;
     top: 5px;
-    text-decoration: underline;
 }
 
 .menu{
@@ -40,7 +39,7 @@ header main img{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    padding: 50px;
+    padding-left: 20px;
 }
 
 #titulos-apresentacao h1{
@@ -289,6 +288,10 @@ section:hover{
     position: fixed;
     bottom: 0;
     right: 0;    
+}
+
+#voltar-inicio:hover{
+    background-color: #4950b6;
 }
 
 #voltar-inicio > svg{
