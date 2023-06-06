@@ -43,9 +43,9 @@ header main img{
 }
 
 #titulos-apresentacao h1{
-    font-family: 'Concert One', cursive;
+    font-family: 'Concert One', Arial, Helvetica, sans-serif;
     color:#6A4CF8;
-    font-size: 400%;
+    font-size: 72px;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
 }
 
@@ -231,7 +231,7 @@ section:hover{
     font-size: 50px;
     position: relative;
     bottom: 60px;
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
     color: aliceblue;
     text-shadow: 3px -5px 3px #F6B737;
 }
@@ -240,7 +240,7 @@ section:hover{
 .listasecao li{
     text-align: justify;
     color: aliceblue;
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Arial, Helvetica, sans-serif;
     font-size: 30px;
     list-style-type: none;
     margin-top: 10px;
@@ -269,15 +269,12 @@ section:hover{
     transition: 0.5s ease-in-out;
 }
 
-/* #projetos img:hover{
-    filter: brightness(0.1);
-} */
-
 .info-projeto{
     visibility: hidden;
     color: white;
     position: absolute;
-    padding: 100px 200px 0px 200px;
+
+    padding: 100px 260px 0px 260px;
     z-index: 1;
 }
 
@@ -309,39 +306,6 @@ section:hover{
 /* Responsividade */
 
 
-@media screen and (max-width: 530px) {
-
-    #logo{
-        display: none;
-    }
-
-    .menu ul{
-        width: auto; 
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-
-    img{
-        width: 200px;
-    }
-
-    section{
-        margin: 3px;
-        padding: 3px;
-    }
-
-    #hardskills, #softskills{
-        gap: 30px;
-    }
-
-    body{
-        font-size: 1px;
-    }
-    
-}
 
 
 @media screen and (max-width: 1200px) {
@@ -378,7 +342,84 @@ section:hover{
         flex-flow: column wrap;
     }
 
+    #hardskills, #softskills{
+        gap: 80px; 
+    }
+
+    #hardskills{
+        flex-direction: column-reverse;
+    }
+
     .texto-descricao{
         margin: 0;
     }
 }
+
+@media screen and (max-width: 530px) {
+
+
+    header{
+        grid-template-areas: 
+        ". . ."
+        ". nav . "
+        ". aside ."
+        ". header-main ."
+        ". . .";
+
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 30px 300px 400px 350px 50px;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #titulos-apresentacao h1{
+        font-size: 35px;
+    }
+
+    
+    .menu ul{
+        width: auto; 
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    img{
+        width: 200px;
+    }
+
+    .titulos{
+        font-size: 30px;
+    }
+
+    #projetos img{
+        width: 300px;
+        height: 250px;
+    }
+    
+    section{
+        margin: 10px 5px;
+        padding: 100px 10px;
+    }
+    
+    .listasecao li{
+        font-size: 18px;
+    }
+
+    #listahardskill li svg, #listasoftskill li svg{
+        width: 30px;
+    }
+
+    #hardskills, #softskills{
+        gap: 30px;
+    }
+    
+    body{
+        font-size: 1px;
+    }
+    
+}
+
