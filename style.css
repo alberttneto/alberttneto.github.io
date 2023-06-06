@@ -308,6 +308,29 @@ section:hover{
 
 /* Responsividade */
 
+
+@media screen and (max-width: 530px) {
+
+    img{
+        width: 200px;
+    }
+
+    section{
+        margin: 3px;
+        padding: 3px;
+    }
+
+    #hardskills, #softskills{
+        gap: 30px;
+    }
+
+    body{
+        font-size: 1px;
+    }
+    
+}
+
+
 @media screen and (max-width: 1200px) {
     #cubos{
         display: none;
@@ -345,5 +368,4 @@ section:hover{
     .texto-descricao{
         margin: 0;
     }
-
 }
