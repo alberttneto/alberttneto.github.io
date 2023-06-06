@@ -311,6 +311,19 @@ section:hover{
 
 @media screen and (max-width: 530px) {
 
+    #logo{
+        display: none;
+    }
+
+    .menu ul{
+        width: auto; 
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
     img{
         width: 200px;
     }
