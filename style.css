@@ -45,7 +45,7 @@ header main img{
 #titulos-apresentacao h1{
     font-family: 'Concert One', Arial, Helvetica, sans-serif;
     color:#6A4CF8;
-    font-size: 72px;
+    font-size: 60px;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
 }
 
@@ -168,7 +168,7 @@ header{
     ". header-main header-main . aside ."
     ". header-main header-main . aside ."
     ". . . . . .";
-    grid-template-columns: 4% 35% 36% 1% 19% 5%;
+    grid-template-columns: 5% 35% 35% 1% 19% 5%;
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
