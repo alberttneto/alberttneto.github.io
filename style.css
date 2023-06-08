@@ -415,6 +415,10 @@ section:hover{
         font-size: 18px;
     }
 
+    #sobremim{
+        margin-bottom: 30px;
+    }
+
     #listahardskill li svg, #listasoftskill li svg{
         width: 30px;
     }
