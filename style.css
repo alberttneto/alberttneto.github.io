@@ -168,7 +168,7 @@ header{
     ". header-main header-main . aside ."
     ". header-main header-main . aside ."
     ". . . . . .";
-    grid-template-columns: 5% 32% 32% 1% 21% 9%;
+    grid-template-columns: 4% 35% 36% 1% 19% 5%;
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
@@ -202,6 +202,7 @@ section{
     padding: 100px;
     text-align: center;
     transition: 1s ease-in-out;
+    z-index: 1;
 }
 
 section:hover{
@@ -275,7 +276,7 @@ section:hover{
     position: absolute;
 
     padding: 100px 260px 0px 260px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #voltar-inicio{
@@ -292,7 +293,8 @@ section:hover{
 
     position: fixed;
     bottom: 0;
-    right: 0;    
+    right: 0;  
+    z-index: 2;  
 }
 
 #voltar-inicio:hover{
@@ -348,6 +350,10 @@ section:hover{
 
     #hardskills{
         flex-direction: column-reverse;
+    }
+
+    #projetos img{
+        width: 700px;
     }
 
     .texto-descricao{
