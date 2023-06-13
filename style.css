@@ -270,6 +270,10 @@ section:hover{
     transition: 0.5s ease-in-out;
 }
 
+#projetos button{
+    z-index: 2;
+}
+
 .info-projeto{
     visibility: hidden;
     color: white;
@@ -306,9 +310,6 @@ section:hover{
 }
 
 /* Responsividade */
-
-
-
 
 @media screen and (max-width: 1200px) {
     #cubos{
@@ -354,10 +355,17 @@ section:hover{
 
     #projetos img{
         width: 700px;
+        filter: brightness(0.4);
     }
 
     .texto-descricao{
         margin: 0;
+    }
+
+    .info-projeto{
+        padding: 40px 40px 0px 40px;
+        font-size: 15px;
+        visibility: visible;
     }
 }
 
@@ -429,6 +437,10 @@ section:hover{
     
     body{
         font-size: 1px;
+    }
+
+    .info-projeto{
+        font-size: 11px;
     }
     
 }
