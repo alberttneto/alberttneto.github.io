@@ -267,6 +267,7 @@ section:hover{
 
 #projetos img{
     border-radius: 10px;
+    border: 5px solid rgb(62, 85, 214);
     transition: 0.5s ease-in-out;
 }
 
