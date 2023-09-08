@@ -43,13 +43,16 @@ header main img{
 }
 
 #titulos-apresentacao h1{
-    font-family: 'Concert One', Arial, Helvetica, sans-serif;
+    font-family: 'Archivo Black', sans-serif;
+    
     color:#6A4CF8;
     font-size: 60px;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8, 0 0 0px #6A4CF8, 0 0 20px #6A4CF8, 0 0 0px #6A4CF8, 0 0 0px #6A4CF8;
 }
 
 #titulos-apresentacao h1 + h1{
+    font-family: 'Play', sans-serif;
+
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
     padding-left: 334px;
@@ -168,7 +171,7 @@ header{
     ". header-main header-main . aside ."
     ". header-main header-main . aside ."
     ". . . . . .";
-    grid-template-columns: 5% 35% 35% 1% 19% 5%;
+    grid-template-columns: 5% 34% 32% 0% 17% 3%;
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
@@ -232,9 +235,9 @@ section:hover{
     font-size: 50px;
     position: relative;
     bottom: 60px;
-    font-family: 'Bungee', Arial, Helvetica, sans-serif;
+    font-family: 'Bungee', cursive;
     color: aliceblue;
-    text-shadow: 3px -5px 3px #F6B737;
+    text-shadow: 3px -5px 3px #040c38;
 }
 
 
@@ -267,7 +270,7 @@ section:hover{
 
 #projetos img{
     border-radius: 10px;
-    border: 5px solid rgb(62, 85, 214);
+    border: 3px solid rgb(255, 255, 255);
     transition: 0.5s ease-in-out;
 }
 
