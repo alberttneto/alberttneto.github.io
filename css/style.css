@@ -27,11 +27,11 @@ a:link, a:visited{
 .menu{
     display: flex;
     flex-flow: row wrap;
-    gap: 0px 50px;
     align-items: center;
+    gap: 0px 50px;
 }
 
-header main img{
+#titulos-apresentacao img{
     margin-top: 60px;
 }
 
@@ -52,10 +52,8 @@ header main img{
 
 #titulos-apresentacao h1 + h1{
     font-family: 'Play', sans-serif;
-
     color:#F6B737;
     text-shadow: 0 0 30px #060507, 0 0 10px #6A4CF8;
-    padding-left: 334px;
 }
 
 #perfil{
@@ -99,9 +97,9 @@ header main img{
 }
 
 #cubos > div:first-of-type{
-
     left: 350px;
 }
+
 #cubos > div:first-of-type + div{ 
     top: 20px;
     left: 35px;
@@ -175,11 +173,11 @@ header{
     grid-template-rows: 30px 100px 280px 280px 60px;
 }
 
-header > .menu{
+header > nav{
     grid-area: nav;
 }
 
-header > main{
+#titulos-apresentacao{
     grid-area: header-main;
 }
 
