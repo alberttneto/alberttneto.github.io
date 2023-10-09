@@ -320,8 +320,7 @@ section:hover{
 }
 
 /* Responsividade */
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
     #cubos{
         display: none;
     }
@@ -329,11 +328,21 @@ section:hover{
     .menu{
         justify-content: center;
     }
-    
-    #titulos-apresentacao h1 + h1{
-        padding: 0;
+
+    #titulos-apresentacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: justify; */
     }
     
+    #titulos-apresentacao h1 + h1{
+        padding: 0px;
+    }
+
+    #titulos-apresentacao img{
+        display: none;
+    }
 
     header{
         grid-template-areas: 
@@ -355,6 +364,10 @@ section:hover{
         flex-flow: column wrap;
     }
 
+    .listasecao li{
+        font-size: 17px;
+    }
+
     #hardskills, #softskills{
         gap: 80px; 
     }
@@ -373,9 +386,9 @@ section:hover{
     }
 
     .info-projeto{
-        padding: 40px 40px 0px 40px;
         font-size: 15px;
         visibility: visible;
+        width: 300px;
     }
 }
 
@@ -430,7 +443,7 @@ section:hover{
     }
     
     .listasecao li{
-        font-size: 18px;
+        font-size: 12px;
     }
 
     #sobremim{
@@ -451,6 +464,7 @@ section:hover{
 
     .info-projeto{
         font-size: 11px;
+        width: 250px;
     }
     
 }
