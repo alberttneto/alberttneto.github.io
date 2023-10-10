@@ -328,13 +328,6 @@ section:hover{
     .menu{
         justify-content: center;
     }
-
-    #titulos-apresentacao{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* text-align: justify; */
-    }
     
     #titulos-apresentacao h1 + h1{
         padding: 0px;
